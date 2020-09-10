@@ -1,0 +1,12 @@
+<h1>WORD COUNT</h1>
+
+<a href="{% url 'about1' %}">About</a>
+
+<br/><br/><br/>
+
+<!-- 'count' is page name variable passed from urls.py  -->
+<form action="{% url 'count1' %}">
+  <textarea name="fulltext" rows="10" cols="40"></textarea>
+  <br />
+  <input type="submit" value="Count!">
+</form>
